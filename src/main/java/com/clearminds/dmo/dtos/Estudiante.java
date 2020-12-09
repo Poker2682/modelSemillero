@@ -5,6 +5,10 @@ public class Estudiante {
 	private String nombre;
 	private String apellido;
 	private long id;
+	
+	public Estudiante() {
+		
+	}
 
 	public Estudiante(String nombre, String apellido, long id) {
 		super();
