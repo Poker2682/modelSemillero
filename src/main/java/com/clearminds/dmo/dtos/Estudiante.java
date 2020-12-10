@@ -4,23 +4,26 @@ public class Estudiante {
 
 	private String nombre;
 	private String apellido;
+	private int edad;
 	private long id;
-	
+
 	public Estudiante() {
-		
+
 	}
 
-	public Estudiante(String nombre, String apellido, long id) {
+	public Estudiante(String nombre, String apellido, int edad, long id) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.id = id;
+		this.edad = edad;
 	}
-	
-	public Estudiante(String nombre, String apellido) {
+
+	public Estudiante(String nombre, String apellido, int edad) {
 		super();
 		this.nombre = nombre;
 		this.apellido = apellido;
+		this.edad = edad;
 	}
 
 	public String getNombre() {
@@ -45,6 +48,14 @@ public class Estudiante {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public int getEdad() {
+		return edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
 
 	@Override
